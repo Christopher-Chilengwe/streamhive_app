@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_250"
+        app:autoPlay="false"
+        app:showFullScreenButton="false"
+        app:showYouTubeButton="false"
+        app:videoId="jA7pyshKpCs" />
+
+    <ImageView
+        android:id="@+id/videoThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_250"
+        android:scaleType="fitXY" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@id/videoThumbnail"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        app:cardCornerRadius="@dimen/dp_50">
+
+        <ImageView
+            android:id="@+id/channelImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:src="@drawable/masai_icon" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/videoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoThumbnail"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toEndOf="@id/cardview"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:id="@+id/channelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoTitle"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_toEndOf="@+id/cardview"
+        android:paddingBottom="@dimen/dp_20"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:id="@+id/publishTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoTitle"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_toEndOf="@id/channelTitle"
+        android:paddingBottom="@dimen/dp_20"
+        android:textSize="@dimen/sp_12" />
+
+</RelativeLayout>
