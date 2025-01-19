@@ -65,13 +65,13 @@
    ```bash  
    git clone https://github.com/Christopher-Chilengwe/Streamhive
 
-   2. Open the project in Android Studio.
+2. Open the project in Android Studio.
 
-   3. Sync Gradle files and install dependencies.
+3. Sync Gradle files and install dependencies.
 
-   4. Add your Firebase configuration file (google-services.json) to the app/ directory.
+4. Add your Firebase configuration file (google-services.json) to the app/ directory.
 
-   5. Run the app on an emulator or physical device.
+5. Run the app on an emulator or physical device.
 
 ---
 
